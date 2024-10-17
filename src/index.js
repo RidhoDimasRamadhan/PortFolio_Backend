@@ -4,11 +4,11 @@ require("dotenv").config();
 const portfolioRoutes = require("../Routes/AuthRoutes");
 
 const app = express();
-const port = 1000; // You can change this port if needed
+const port = 1000; 
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // To parse JSON bodies
+app.use(express.json()); 
 
 // Use the routes
 app.use("/", portfolioRoutes);
